@@ -7,8 +7,9 @@ export const AppContextProvider = ({ children }) => {
         title: '',
         location: ''
     })
+    const [issearch, setissearch] = useState(false)
     const value = {
-        search, setsearch
+        search, setsearch, issearch, setissearch
 
     }
     return (
