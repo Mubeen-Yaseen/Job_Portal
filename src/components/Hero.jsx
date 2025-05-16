@@ -41,6 +41,7 @@ const Hero = () => {
                     </div>
 
                     {/* Location Input */}
+                    <p className='text-gray-300 text-xl mb-1'>|</p>
                     <div className='flex items-center rounded-md px-3 py-2 w-full'>
                         <img src={location_icon} alt="" className='mr-2' />
                         <input
