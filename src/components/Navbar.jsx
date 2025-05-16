@@ -16,7 +16,7 @@ const Navbar = () => {
                 {
                     user ?
                         <div className='flex items-center gap-3'>
-                            <Link to='/applications' className='text-xs md:text-lg'>Applied Jobs</Link>
+                            <Link to='/applications' className='text-xs md:text-md'>Applied Jobs</Link>
                             <p>|</p>
                             <p className='hidden md:block'>Hi, {user.firstName + " " + user.lastName}</p>
                             <UserButton /> {/*it show the user profile button/picture */}
