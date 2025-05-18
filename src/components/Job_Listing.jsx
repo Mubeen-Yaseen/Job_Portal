@@ -74,7 +74,7 @@ const Job_Listing = () => {
             <section className='w-full lg:w-3/4 px-4 lg:px-0 my-8 lg:my-0 '>
                 <h1 className='font-medium text-3xl py-1.5'>Latest jobs</h1>
                 <p className='mb-8'>Get your desired job from top companies</p>
-                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4'>
                     {
                         jobsData.map((job, index) => (
                             // console.log(job)
