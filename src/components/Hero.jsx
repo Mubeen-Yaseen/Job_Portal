@@ -26,7 +26,6 @@ const Hero = () => {
                 <p className=' text-white mx-auto text-base text-wrap max-w-xl px-5 mb-7'>Your Next Big Career Move Starts Right Here - Explore the Best Job Opportunities and Take the First Step Toward Your Future!</p>
 
                 {/* ----------------------Search-Bar------------------- */}
-                {/* <div className='flex items-center justify-between bg-white rounded max-w-xl mx-4 sm:mx-auto p-1 '> */}
                 <div className='flex items-center justify-between bg-white rounded max-w-xl mx-4 sm:mx-auto p-1'>
 
                     {/* Title Input */}
@@ -55,14 +54,14 @@ const Hero = () => {
                     {/* Search Button */}
                     <button
                         onClick={clickbtn}
-                        className='bg-blue-600  text-white rounded-md px-6 py-2 text-sm font-semibold hover:bg-blue-700'>
+                        className='bg-blue-600 cursor-pointer text-white rounded-md px-6 py-2 text-sm font-semibold hover:bg-blue-700'>
                         Search
                     </button>
                 </div>
                 {/* -------------Company Logos Trusted By--------------- */}
             </div>
             <div className='border border-gray-300 rounded-md mt-5 flex gap-10 lg:gap-16 items-center shadow-md p-6 mx-2 flex-wrap justify-center'>
-                <h1 className='font-bold'>Trusted by</h1>
+                <h1 className='font-semibold text-base'>Trusted by</h1>
                 <img className='h-6' src={microsoft_logo} alt="" />
                 <img className='h-6' src={walmart_logo} alt="" />
                 <img className='h-6' src={accenture_logo} alt="" />
