@@ -3,17 +3,24 @@ import { AppContext } from '../AppContext/context'
 import { assets, JobCategories, JobLocations } from '../assets/assets';
 import Jobcards from './Jobcards';
 import { jobsData } from '../assets/assets';
+import { useState } from 'react';
 
 const { cross_icon } = assets;
 
 
 const Job_Listing = () => {
     const { search, setsearch, issearch } = useContext(AppContext)
+    // Toggle Function
+    const [isVisible, setisVisible] = useState(false)
+    const onToggle = () => {
+        setisVisible((prev) => !prev)
 
+    }
 
 
     return (
         <div className='container mx-auto flex flex-col lg:flex-row py-8'>
+
             <div className='w-full lg:w-1/4 px-4'>
                 {/* ----------------Current Search-------------- */}
                 <div>
@@ -39,9 +46,10 @@ const Job_Listing = () => {
                             </>
                         )}
                 </div>
-
+                {/* ----------------Toggle Button --------------------*/}
+                <button onClick={onToggle} className='lg:hidden text-gray-600 border px-2.5 py-1.5 rounded-sm'>{isVisible ? 'close' : 'Filters'}</button>
                 {/* ----------------Search By Categories-------------- */}
-                <div>
+                <div className={`${isVisible ? 'block' : 'hidden'} lg:block`}>
                     <h1 className='py-4 font-semibold text-lg '>Search by Categories</h1>
                     <ul className='space-y-4'>
                         {
@@ -55,8 +63,9 @@ const Job_Listing = () => {
                     </ul>
                 </div>
 
+
                 {/* ----------------Search By Location-------------- */}
-                <div>
+                <div className={`${isVisible ? 'block' : 'hidden'} lg:block`}>
                     <h1 className='font-semibold text-lg pb-4 pt-14'>Search by Location</h1>
                     <ul className='space-y-4'>
                         {
@@ -88,7 +97,7 @@ const Job_Listing = () => {
             </section>
 
 
-        </div>
+        </div >
     )
 }
 

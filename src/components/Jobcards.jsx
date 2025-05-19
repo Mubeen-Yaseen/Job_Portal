@@ -2,6 +2,7 @@ import React from 'react'
 import { assets } from '../assets/assets'
 const Jobcards = ({ job }) => {
     return (
+        // ------------------Job_Card------------------
         <div className='p-6 border border-gray-200 shadow rounded '>
             <img src={assets.company_icon} alt="company_icon" />
             <h1 className='font-medium text-xl py-2'>{job.title}</h1>
