@@ -21,6 +21,7 @@ const Job_Listing = () => {
     return (
         <div className='container mx-auto flex flex-col lg:flex-row py-8'>
 
+            {/* ---------------------Side Bar ----------------- */}
             <div className='w-full lg:w-1/4 px-4'>
                 {/* ----------------Current Search-------------- */}
                 <div>
