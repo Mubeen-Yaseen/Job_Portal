@@ -47,7 +47,7 @@ const Job_Listing = () => {
                         )}
                 </div>
                 {/* ----------------Toggle Button --------------------*/}
-                <button onClick={onToggle} className='lg:hidden text-gray-600 border px-5 py-1.5 font-semibold  rounded-sm'>{isVisible ? 'close' : 'Filters'}</button>
+                <button onClick={onToggle} className='lg:hidden text-gray-600 border px-5 py-1.5 font-semibold  rounded-sm'>{isVisible ? 'Close' : 'Filters'}</button>
                 {/* ----------------Search By Categories-------------- */}
                 <div className={`${isVisible ? 'block' : 'hidden'} lg:block`}>
                     <h1 className='py-4 font-semibold text-lg '>Search by Categories</h1>
