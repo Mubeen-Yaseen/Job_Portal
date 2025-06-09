@@ -12,7 +12,7 @@ const Navbar = () => {
     return (
         <div className='shadow py-4'>
             <div className='container mx-auto px-4 2xl:px-20 flex justify-between items-center'>
-                <img src={assets.logo} alt="" />
+                <img src={assets.logo} alt="" className='w-40 md:w-44' />
                 {
                     user ?
                         <div className='flex items-center gap-3'>
